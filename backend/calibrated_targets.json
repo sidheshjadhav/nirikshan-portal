@@ -1,0 +1,218 @@
+{
+  "Maharashtra": {
+    "count": 182,
+    "orig": 357543.44,
+    "rev": 439562.88,
+    "exp": 187705.56
+  },
+  "Uttar Pradesh": {
+    "count": 125,
+    "orig": 241457.9,
+    "rev": 296334.55,
+    "exp": 126924.7
+  },
+  "Bihar": {
+    "count": 112,
+    "orig": 208953.95,
+    "rev": 256823.28,
+    "exp": 111729.49
+  },
+  "Andhra Pradesh": {
+    "count": 113,
+    "orig": 199667.11,
+    "rev": 244969.9,
+    "exp": 105472.64
+  },
+  "Madhya Pradesh": {
+    "count": 110,
+    "orig": 195023.69,
+    "rev": 239043.2,
+    "exp": 102791.13
+  },
+  "Karnataka": {
+    "count": 113,
+    "orig": 190380.27,
+    "rev": 233116.51,
+    "exp": 100109.62
+  },
+  "Odisha": {
+    "count": 108,
+    "orig": 181093.42,
+    "rev": 222250.91,
+    "exp": 95640.44
+  },
+  "Jharkhand": {
+    "count": 103,
+    "orig": 171806.58,
+    "rev": 210397.53,
+    "exp": 90277.43
+  },
+  "Gujarat": {
+    "count": 99,
+    "orig": 204310.53,
+    "rev": 250896.59,
+    "exp": 108154.15
+  },
+  "West Bengal": {
+    "count": 78,
+    "orig": 134659.21,
+    "rev": 164959.57,
+    "exp": 70613.04
+  },
+  "Chhattisgarh": {
+    "count": 77,
+    "orig": 130015.79,
+    "rev": 159032.88,
+    "exp": 67931.53
+  },
+  "Assam": {
+    "count": 76,
+    "orig": 125372.37,
+    "rev": 154093.97,
+    "exp": 66143.86
+  },
+  "Rajasthan": {
+    "count": 74,
+    "orig": 134659.21,
+    "rev": 164959.57,
+    "exp": 70613.04
+  },
+  "Tamil Nadu": {
+    "count": 65,
+    "orig": 120728.95,
+    "rev": 148167.28,
+    "exp": 63462.35
+  },
+  "Telangana": {
+    "count": 53,
+    "orig": 97511.84,
+    "rev": 119521.6,
+    "exp": 50948.65
+  },
+  "Punjab": {
+    "count": 53,
+    "orig": 91011.05,
+    "rev": 111619.35,
+    "exp": 47373.3
+  },
+  "Jammu and Kashmir": {
+    "count": 52,
+    "orig": 172125.46,
+    "rev": 119458.58,
+    "exp": 114037.36
+  },
+  "Uttarakhand": {
+    "count": 52,
+    "orig": 146179.29,
+    "rev": 96740.21,
+    "exp": 103701.12
+  },
+  "Haryana": {
+    "count": 39,
+    "orig": 76152.11,
+    "rev": 93839.27,
+    "exp": 40222.62
+  },
+  "Himachal Pradesh": {
+    "count": 37,
+    "orig": 143839.41,
+    "rev": 96645.29,
+    "exp": 102900.15
+  },
+  "Kerala": {
+    "count": 37,
+    "orig": 69651.32,
+    "rev": 84949.24,
+    "exp": 36647.27
+  },
+  "Manipur": {
+    "count": 35,
+    "orig": 41790.79,
+    "rev": 51364.66,
+    "exp": 22345.9
+  },
+  "Arunachal Pradesh": {
+    "count": 28,
+    "orig": 39004.74,
+    "rev": 47413.53,
+    "exp": 20558.23
+  },
+  "Nagaland": {
+    "count": 25,
+    "orig": 29717.9,
+    "rev": 36547.93,
+    "exp": 15642.13
+  },
+  "Mizoram": {
+    "count": 22,
+    "orig": 26003.16,
+    "rev": 31609.02,
+    "exp": 13407.54
+  },
+  "Meghalaya": {
+    "count": 20,
+    "orig": 24145.79,
+    "rev": 29633.46,
+    "exp": 12513.7
+  },
+  "Sikkim": {
+    "count": 20,
+    "orig": 22288.42,
+    "rev": 27657.89,
+    "exp": 11619.87
+  },
+  "Delhi": {
+    "count": 19,
+    "orig": 35290.0,
+    "rev": 43462.4,
+    "exp": 18770.55
+  },
+  "Tripura": {
+    "count": 17,
+    "orig": 20431.05,
+    "rev": 24694.55,
+    "exp": 10726.03
+  },
+  "Ladakh": {
+    "count": 9,
+    "orig": 52745.96,
+    "rev": 41982.8,
+    "exp": 31642.63
+  },
+  "Goa": {
+    "count": 9,
+    "orig": 11144.21,
+    "rev": 13828.95,
+    "exp": 5809.93
+  },
+  "Puducherry": {
+    "count": 9,
+    "orig": 8822.5,
+    "rev": 10865.6,
+    "exp": 4647.95
+  },
+  "Chandigarh": {
+    "count": 4,
+    "orig": 3900.47,
+    "rev": 4741.35,
+    "exp": 2055.82
+  },
+  "Dadra and Nagar Haveli": {
+    "count": 3,
+    "orig": 2600.32,
+    "rev": 3160.9,
+    "exp": 1340.75
+  },
+  "Andaman and Nicobar": {
+    "count": 2,
+    "orig": 1950.24,
+    "rev": 2370.68,
+    "exp": 983.22
+  },
+  "Lakshadweep": {
+    "count": 1,
+    "orig": 1021.55,
+    "rev": 1284.12,
+    "exp": 536.3
+  }
+}
