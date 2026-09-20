@@ -2757,6 +2757,569 @@
   border-color: var(--navy);
 }
 
+/* ============================================================ */
+/* ULTRA-RESPONSIVE DESIGN FOR ALL DEVICES (MOBILE, TABLET, PC) */
+/* ============================================================ */
+
+/* Global Smooth Touch & Box Model */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+img, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+.pub-table-wrap, .portal-table-wrap, .table-responsive {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+/* TABLETS & MEDIUM SCREENS (<= 1024px) */
+@media (max-width: 1024px) {
+  .gov-topbar { padding: 6px 20px; }
+  .pub-header { padding: 12px 20px; }
+  .pub-nav { padding: 0 20px; }
+  .pub-crumb { padding: 8px 20px 0; }
+  .pub-hero { margin: 14px 20px 0; padding: 36px 28px; }
+  .pub-simple-hero { padding: 24px 20px; }
+  .pub-main { padding: 20px 20px 0; }
+  .pub-footer-top { padding: 24px 20px; }
+  .portal-header { padding: 0 16px; }
+  .portal-content { padding: 20px 16px; }
+  
+  .pub-stat-row { grid-template-columns: repeat(3, 1fr) !important; }
+  .pub-sector-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .pub-sector-grid-lg { grid-template-columns: repeat(2, 1fr) !important; }
+  .pub-feature-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .pub-what-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .pub-split { grid-template-columns: 1fr !important; }
+  .portal-kpi-row { grid-template-columns: repeat(2, 1fr) !important; }
+  .portal-grid-3 { grid-template-columns: 1fr 1fr !important; }
+  .portal-grid-split { grid-template-columns: 1fr !important; }
+  .paimana-state-split { grid-template-columns: 1fr !important; }
+}
+
+/* SMARTPHONES & SMALL TABLETS (<= 768px) */
+@media (max-width: 768px) {
+  /* Government Bar */
+  .gov-topbar {
+    padding: 6px 12px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+
+  /* Public Header */
+  .pub-header {
+    padding: 10px 14px;
+    gap: 12px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pub-brand-row {
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+  }
+  .pub-emblem { height: 42px; }
+  .pub-emblem-text .name { font-size: 11.5px; }
+  .pub-emblem-text .sub { font-size: 9.5px; }
+  .pub-logo-img { height: 70px; }
+  .pub-wordmark { font-size: 22px; }
+  .pub-tagline { font-size: 10px; }
+  .pub-header-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pub-access {
+    justify-content: center;
+    font-size: 11.5px;
+    gap: 12px;
+  }
+  .pub-search-box {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 9px 12px;
+  }
+  .pub-signin-btn {
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
+    font-size: 13.5px;
+    margin: 4px 0 0;
+  }
+
+  /* Public Nav (Horizontally Swipeable Tab Bar) */
+  .pub-nav {
+    padding: 0 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-bottom: 2px solid var(--border);
+  }
+  .pub-nav::-webkit-scrollbar { display: none; }
+  .pub-nav-links {
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+  .pub-nav-links button {
+    padding: 12px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .pub-crumb {
+    padding: 8px 14px 0;
+    font-size: 11.5px;
+  }
+
+  /* Public Hero Banner */
+  .pub-hero {
+    margin: 10px 12px 0;
+    padding: 24px 16px;
+    border-radius: 12px;
+    min-height: auto;
+  }
+  .pub-hero h1 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    max-width: 100%;
+  }
+  .pub-hero p {
+    font-size: 13px;
+    margin: 0 0 16px;
+    max-width: 100%;
+    line-height: 1.45;
+  }
+  .pub-hero-search {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .pub-hero-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    font-size: 13.5px;
+  }
+  .pub-hero-search button {
+    width: 100%;
+    padding: 11px;
+    font-size: 13.5px;
+  }
+  .pub-hero-tag {
+    position: static;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+  }
+  .pub-hero-quote {
+    position: static;
+    margin-top: 16px;
+    max-width: 100%;
+    font-size: 12px;
+    padding: 10px 14px;
+    box-sizing: border-box;
+  }
+
+  /* Public Simple Hero */
+  .pub-simple-hero {
+    padding: 20px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pub-simple-hero h1 { font-size: 24px; }
+  .pub-simple-hero p { font-size: 13px; }
+
+  /* Public Main Container */
+  .pub-main { padding: 16px 12px 0; }
+
+  /* Stats Cards Grid */
+  .pub-stat-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    margin: 14px 0 22px;
+  }
+  .pub-stat-card {
+    padding: 12px 12px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .pub-stat-card .ic { width: 34px; height: 34px; font-size: 15px; }
+  .pub-stat-card .num { font-size: 17px; }
+  .pub-stat-card .lab { font-size: 10.5px; }
+
+  /* Sector Grids */
+  .pub-sector-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .pub-sector-tile { padding: 12px 8px; }
+  .pub-sector-tile .emoji { font-size: 22px; margin-bottom: 4px; }
+  .pub-sector-tile .sname { font-size: 11.5px; }
+  .pub-sector-tile .scount { font-size: 10px; }
+
+  .pub-sector-grid-lg {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+  .pub-feature-grid, .pub-what-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  /* Split Rows & Contact */
+  .pub-split, .contact-grid, .about-purpose-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .contact-2col {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .pub-panel { padding: 14px; }
+  .pub-row-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .pub-view-all {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Paimana / MoSPI Section */
+  .paimana-state-section {
+    padding: 16px 12px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+  .paimana-section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 14px;
+  }
+  .paimana-section-heading h2 { font-size: 20px; }
+  .paimana-state-banner { font-size: 16px; padding: 10px; }
+  .paimana-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .paimana-card-cell:nth-child(odd) {
+    border-right: none;
+    border-bottom: 1px dashed #CBD5E1;
+  }
+  .paimana-card-cell {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+  .paimana-cell-val { font-size: 20px; }
+  .paimana-map-wrapper {
+    flex-direction: column;
+    padding: 6px 0;
+  }
+  .paimana-map-legend-wrap {
+    position: static;
+    transform: none;
+    margin: 12px auto 0;
+    justify-content: center;
+  }
+  #india-map-svg { max-width: 100%; }
+
+  /* NIRA Assistant Banner */
+  .nira-banner {
+    padding: 18px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .nira-mascot { width: 56px; height: 56px; }
+  .nira-word { font-size: 20px; }
+  .nira-chip-row { gap: 6px; }
+  .nira-chip { font-size: 11px; padding: 5px 10px; }
+  .nira-input-row, .chat-input-row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+  }
+  .nira-input-row input, .chat-input-row input {
+    width: 100%;
+    height: 44px;
+    font-size: 13px;
+  }
+  .pub-nira-send-btn, #pub-nira-send, .chat-input-row button {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 44px !important;
+  }
+  .nira-voice-controls {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .pub-mic-btn, #mic-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .nira-status-pill {
+    padding: 6px 12px;
+    font-size: 11.5px;
+  }
+
+  /* Tables & Filters */
+  .pub-filters-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .pub-filters-bar select, .pub-filters-bar input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .pub-table-wrap table, .portal-table {
+    min-width: 580px;
+  }
+  .pub-pagination {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* CTA & Value Strip */
+  .pub-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px 16px;
+  }
+  .pub-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .pub-value-strip {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px 14px;
+  }
+  .pub-footer-top {
+    flex-direction: column;
+    padding: 22px 14px;
+    gap: 16px;
+  }
+  .pub-footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Voice Modal Popup */
+  .voice-modal .vmodal-box {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    max-height: 92vh !important;
+    border-radius: 14px !important;
+  }
+
+  /* Login Screen Mobile Adaptation */
+  .login-split { grid-template-columns: 1fr !important; min-height: auto; }
+  .login-hero-side { display: none !important; }
+  .login-form-side { padding: 20px 14px; }
+  .login-card2 {
+    padding: 22px 16px;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+  .role-cards2 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px;
+  }
+  .role-card2 { padding: 8px 4px; }
+  .role-card2 .ric { font-size: 16px; }
+  .role-card2 .rname { font-size: 9.5px; }
+
+  /* ============================================================ */
+  /* PORTAL / DASHBOARD MOBILE LAYOUTS                           */
+  /* ============================================================ */
+  .portal-header {
+    height: auto;
+    min-height: 56px;
+    padding: 10px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .portal-header-left {
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .portal-header-emblem { height: 32px; }
+  .portal-header-title .main { font-size: 13.5px; }
+  .portal-header-title .sub { font-size: 10px; }
+  .portal-header-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: 6px;
+    border-top: 1px solid #F1F5F9;
+  }
+  .portal-user-chip { padding: 4px 8px; }
+  .portal-user-details .uname { font-size: 11.5px; }
+  .portal-user-details .udesig { font-size: 10px; }
+  .portal-header-logout-btn { padding: 5px 10px; font-size: 11.5px; }
+
+  /* Portal Sidebar -> Responsive Top Navigation on Mobile */
+  .portal-wrapper {
+    flex-direction: column !important;
+    min-height: auto;
+  }
+  .portal-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    flex-direction: column;
+    border-right: none;
+    border-bottom: 2px solid #1E293B;
+  }
+  .portal-brand {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .portal-brand-text .title { font-size: 14.5px; }
+  .portal-brand-text .sub { font-size: 10.5px; }
+  .portal-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 10px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  .portal-nav::-webkit-scrollbar { display: none; }
+  .portal-nav-item {
+    white-space: nowrap;
+    width: auto;
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .portal-sidebar-footer, .sidebar-bottom-badge {
+    display: none !important;
+  }
+
+  /* Portal Main Content Area */
+  .portal-main-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .portal-content {
+    padding: 14px 10px !important;
+  }
+
+  /* Hero Banners */
+  .portal-hero-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 14px;
+  }
+  .portal-hero-content h1 { font-size: 19px; }
+  .portal-hero-content .subtitle { font-size: 12px; }
+  .portal-hero-content .quote { font-size: 11.5px; }
+  .portal-hero-right {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Portal KPI Grids */
+  .portal-kpi-row, .portal-kpi-row.five-col {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    margin-bottom: 16px;
+  }
+  .portal-kpi-card {
+    padding: 12px 10px;
+    gap: 8px;
+  }
+  .portal-kpi-ic { width: 36px; height: 36px; font-size: 16px; }
+  .portal-kpi-data .val { font-size: 18px; }
+  .portal-kpi-data .lab { font-size: 10.5px; }
+
+  /* Portal Grids & Cards */
+  .portal-grid-3, .portal-grid-split {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .portal-insights-row {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .portal-card {
+    padding: 14px 12px;
+  }
+  .portal-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .portal-subheader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .portal-title-wrap h2 { font-size: 20px; }
+  .portal-actions-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .portal-action-btn-primary, .portal-action-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Modals on Mobile */
+  .portal-modal-box, .role-modal-box, .detail-modal-box, .modal-box {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    margin: 10px auto !important;
+    padding: 16px 14px !important;
+  }
+}
+
+/* EXTRA SMALL PHONES (<= 420px) */
+@media (max-width: 420px) {
+  .pub-stat-row { grid-template-columns: 1fr !important; }
+  .pub-sector-grid { grid-template-columns: 1fr !important; }
+  .portal-kpi-row, .portal-kpi-row.five-col { grid-template-columns: 1fr !important; }
+  .role-cards2 { grid-template-columns: repeat(2, 1fr) !important; }
+  .pub-wordmark { font-size: 19px; }
+  .pub-hero h1 { font-size: 19px; }
+}
+
 </style>
 </head>
 <body>
